@@ -1,0 +1,54 @@
+def main():
+  print("Macdaddy's skate shop")
+  print("Instructions: type 1,2,3,4 or 5 when ready to choose\n")
+
+main()
+
+def shop():
+  choice =(input("Please pick your deck color\n1 red \n2 blue \n3 black 
+                "\n4 green \n5 yellow\n"
+                "Please choose: "))
+  for choice in choice:
+    if choice == "1":
+      print("red deck")
+    elif choice == "2":
+      print("blue deck")
+    elif choice == "3":
+      print("black deck")
+    elif choice == "4":
+      print("green deck")
+    elif choice == "5":
+      print("yellow deck")
+    else:
+      print("If deck color is not chosen, the default will be white.")
+      
+while True:
+  choice = input("Would you like to choose a new deck?")
+  if not('y' in choice.lower()):
+    break
+    
+shop()
+
+def skate():
+  choice = (input("Please choose your skate wheels\n6 zero \n7 DGk \n8 Supreme
+            "\n9 Diamond \n10 Baker"
+            "\nPlease choose: "))
+            
+  for choice in choice:
+    if choice == "6":
+      print("Zero")
+    elif choice == "7":
+      print("DGK")
+    elif choice == "8":
+      print("Supreme")
+    elif choice == "9":
+      print("Diamond")
+    elif choice == "10":
+      print("Baker")
+    else:
+      print("Please choosea  wheel brand or default will be white.")
+
+skate()
+     
+      
+  
